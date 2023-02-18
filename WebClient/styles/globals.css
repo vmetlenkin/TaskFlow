@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: #FBFAFC;
+  @apply dark:bg-[#0f0f0f] dark:text-white;
+}
+
+input[type="text"]
+{
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  @apply text-indigo-700 hover:text-indigo-800 cursor-pointer;
+}
+
+#__next {
+  @apply h-screen;
+}
